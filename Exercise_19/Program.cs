@@ -19,6 +19,10 @@ else
 
 Console.WriteLine("Введите пятизначное число: ");
 int yourNum = Convert.ToInt32(Console.ReadLine());
-PalindromCheck (yourNum);
+
+if (yourNum > 99999)
+    Console.WriteLine("Попробуйте снова, введя ПЯТИЗНАЧНОЕ число.");
+else
+    PalindromCheck (yourNum);
 
 
